@@ -1,0 +1,19 @@
+services:
+  - type: worker
+    name: hotstar-telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python hotstar_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: CHECK_INTERVAL
+        value: "300"
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: hotstar-bot-data
+      mountPath: /var/data
+      sizeGB: 1
