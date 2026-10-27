@@ -11,8 +11,8 @@ import telebot
 # Configure these in Render > Environment:
 # BOT_TOKEN = Telegram bot token from @BotFather
 # ADMIN_ID = your numeric Telegram user ID
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-ADMIN_ID = os.getenv("ADMIN_ID", "").strip()
+BOT_TOKEN = os.getenv("8535271767:AAGASCq-ncUEGY5IYnszNs_WOGQ8xlewOoY", "").strip()
+ADMIN_ID = os.getenv("1686274364", "").strip()
 CHECK_INTERVAL = max(60, int(os.getenv("CHECK_INTERVAL", "300")))
 DATA_DIR = Path(os.getenv("DATA_DIR", "/var/data"))
 DATA_DIR.mkdir(parents=True, exist_ok=True)
